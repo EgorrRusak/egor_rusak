@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>test</legend>
+            <!-- <label for="test">
+                your name
+            </label> -->
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nobis dolores architecto qui
+                    excepturi dicta sit labore ipsa quibusdam! Modi maxime accusamus temporibus consequuntur maiores,
+                    voluptatem architecto dolore libero voluptates.</span><span>Ea voluptatem ipsum quibusdam vel
+                    eligendi magnam eum autem a pariatur officiis similique, accusantium voluptates quas soluta harum
+                    nam animi aperiam? Quae exercitationem aliquam neque eaque odit provident doloribus
+                    quos!</span><span>Incidunt, placeat fuga quae assumenda reiciendis similique. Enim asperiores
+                    laudantium aut, possimus quos debitis itaque doloremque. Consequatur distinctio, nihil aliquam
+                    architecto dignissimos fuga ducimus iure assumenda cum. Cumque, doloremque
+                    voluptatibus?</span><span>Magnam corrupti ducimus in culpa distinctio quae cumque nesciunt, totam
+                    officiis rem praesentium, dolor, dolore expedita architecto dolores eos aliquid est veritatis esse
+                    saepe porro mollitia! Dolores exercitationem quos cupiditate?</span><span>Exercitationem, ipsa.
+                    Aliquid, enim? Architecto sunt alias illo amet pariatur! Quo molestias, facere quis dolorum sequi
+                    nam repudiandae fugit obcaecati corrupti magnam repellat odit illum? Quis maxime labore vero
+                    laborum?</span></p>
+            <input type="text" tabindex="4">
+            <input type="text"tabindex="3">
+            <input type="text"tabindex="2" autofocus>
+            <input type="text"tabindex="1">
+        </fieldset>
+        <fieldset>
+            <legend>checkbox</legend>
+            <input type="checkbox" name="check[]" value="check1">
+            <input type="checkbox" name="check[]" value="check2">
+            <input type="checkbox" name="check[]" value="check3">
+            <input type="checkbox" name="check[]" value="check4">
+            <input type="checkbox" name="check[]" value="check5">
+            <input type="checkbox" name="check[]" value="check6">
+            <input type="checkbox" name="check[]" value="check7">
+        </fieldset>
+        <fieldset>
+            <legend>radio</legend>
+            <input type="radio" name="radio" value="radio1">
+            <input type="radio" name="radio"value="radio2">
+            <input type="radio" name="radio"value="radio3">
+
+            <input type="radio" name="radio1" value="radio1">
+            <input type="radio" name="radio1"value="radio2">
+            <input type="radio" name="radio1"value="radio3">
+        </fieldset>
+        <fieldset>
+            <legend>email</legend>
+            <input type="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>file</legend>
+            <input type="file" name="file">
+        </fieldset>
+        <fieldset>
+            <legend>textarea</legend>
+            <textarea name="text" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>select</legend>
+            <select name="select" size="2" multiple>
+            <option value="sel1">sel1</option>
+            <option value="sel2">sel2</option>
+            <option value="sel3">sel3</option>
+            <option value="sel4">sel4</option>
+            <option value="sel5">sel5</option>
+        </select>
+        </fieldset>
+        <input type="number" min="10" max="100" step="30">
+
+<input type="text" pattern="[0-9]{6,10}">
+
+        <input type="submit">
+        
+
+    </form>
+</body>
+
+</html>
