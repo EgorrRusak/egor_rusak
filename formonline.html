@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <p><em>Пожфлйста заполните форму. Обязательные поля  помечены <span style="color: red;">*</span></em></p>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <fieldset>
+            <legend>Контактная информация</legend>
+<label for="text"> Имя<span style="color: red;">*</span></label>
+            <input type="text" required> <br>
+            <label for="tel"> Телефон</label>
+            <input type='tel'  required pattern= ^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$> <br>
+            <label for="email" >email<span style="color: red;">*</span></label>
+            <input type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+        
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <label for="number">возраст<span style="color: red;">*</span></label>
+            <input type="number" min="18" max="60" required> <br>
+            <label for="select">пол</label> 
+            <select name="select" size="1" multiple>  
+                <option value="sel1">Мужчина</option>
+                <option value="sel2">Женщина</option>
+        </select> <br>
+        <label for="text"> Перечислите личные качества </label>
+        <textarea name="text"  cols="20" rows="10"></textarea>      
+            </fieldset>
+        <fieldset>
+            <legend>Выбериоте ваших любимых животных</legend>
+            <input type="checkbox" name="check[]" value="check1">зебра 
+            <input type="checkbox" name="check[]" value="check2">слон
+            <input type="checkbox" name="check[]" value="check3">кошак 
+            <input type="checkbox" name="check[]" value="check4">антилопа
+            <input type="checkbox" name="check[]" value="check5">анаконда 
+            <input type="checkbox" name="check[]" value="check6">голубь
+            <input type="checkbox" name="check[]" value="check7">человек
+            <input type="checkbox" name="check[]" value="check7">краб
+        </fieldset>
+
+        <input type="submit">
+    </form>
+
+    
+</body>
+</html>
