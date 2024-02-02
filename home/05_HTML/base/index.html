@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset >
+            <legend>Строка поиска</legend>
+        <input name="s"type="search">
+        <button type="submit">Искать</button> <br>
+        <input type="radio" name="radio" value="radio1">
+        <label for="radio">на сайте</label>
+        <input type="radio" name="radio"value="radio2">
+        <label for="radio"> в google</label>
+        </fieldset>
+      </form>
+      <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+        <legend>Строка поиска</legend>
+        <input name="s"type="search" required autofocus>
+        <button type="submit">Искать</button> <br>
+        <input type="radio" name="radio" value="radio1">
+        <label for="radio">на сайте</label>
+        <input type="radio" name="radio"value="radio2">
+        <label for="radio"> в google</label>
+    </fieldset>
+      </form>
+      <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+<fieldset>
+    <legend>Авторизуйтесь</legend>
+    <input type="text" required>
+    <label for="text"> *Логин</label><br>
+    <input type="password" required>
+    <label for="password"> *Пароль</label><br>
+    <input type="checkbox">
+    <label for="checkbox">Оставаться в системе</label><br>
+    <button type="submit">Войти</button>
+</fieldset>
+      </form>
+      <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Как вам?</legend>
+            <label>  
+                <input type="radio"  name="val_1" id="chbox1" checked >  ничего
+                </label><br>
+                
+                <label>  
+                    <input type="radio" name="val_1" id="chbox1" checked>  неплохо
+                    </label><br>
+                    
+                    <label>  
+                        <input type="radio" name="val_1" id="chbox1" checked>  хорошо
+                        </label><br>
+                        
+                        <label>  
+                            <input type="radio" name="val_1" id="chbox1" checked>  супер
+                            </label><br>
+            <input type="submit">
+        </fieldset>
+      </form>
+      <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>оставьте ваш отзыв</legend>
+            <input type="text" required>
+            <label for="text">*Имя</label><br>
+            <input type="email" name="email" id="email 1" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+<label for="email">*E-mail</label><br>
+<textarea name="tex1" id="tex" cols="10" rows="3">форма отправки</textarea><br>
+<input type="submit">
+        </fieldset>
+      </form>
+      <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Города РБ</legend>
+            <select name="select" size="1">
+                <option value="sel1">Брест</option>
+                <option value="sel2">Минск</option>
+                <option value="sel3">Витебск</option>
+                </select>
+                <select name="sel1" id="sel1" size="9" multiple>
+                    <option disabled>Города РБ</option>
+                    <option value="sel1">Брест</option>
+                    <option value="sel2">Минск</option>
+                    <option value="sel3">Витебск</option>
+                    <option disabled>Города России</option>
+                    <option value="sel1">Москва</option>
+                    <option value="sel2">Рязань</option>
+                    <option value="sel3">Магадан</option><br>
+                </select>
+                <button type="submit"> Ok</button>
+        </fieldset>
+      </form>
+      <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Upload</legend>
+            <input type="file" name="file"><br>
+            <label for="text">Срок хранения (года):</label><br>
+            <input type="text">
+            <button type="submit">загрузить</button>
+        </fieldset>
+      </form>
+      <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Строка поиска</legend>
+            <input type="text" pattern="[А-Яа-яЁё]"><br>
+            <input type='tel'   pattern= ^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$> <br>
+            <button type="submit">Проверить</button>
+        </fieldset>
+      </form>
+
+
+
+
+
+
+</body>
+</html>
